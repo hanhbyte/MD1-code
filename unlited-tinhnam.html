@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhnamnhuan</title>
+</head>
+<body>
+<script>
+  let year = parseInt(prompt("Enter  a year"));
+  if (year % 400 == 0) {
+    document.write("Là Năm Nhuận : " + year)
+  }
+  else {
+    if (year % 4 == 0 && year % 100 != 0 )
+      document.write("Là năm nhuận : " + year)
+    else{
+        document.write("Không phải năm nhuận : " + year)
+    }
+  }
+</script>
+</body>
+</html>

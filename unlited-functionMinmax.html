@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min Max</title>
+</head>
+<body>
+<script>
+  function minArray(arr){
+      let vitri = arr[0];
+    if (arr.length ===   0)
+        return -1;
+      vitri = arr [0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < vitri ) {
+        vitri = arr[i];
+        }
+    }
+    return vitri;
+  }
+  let arr1 = [3,5,1,8,-3,7,8];
+  let vitri = minArray(arr1);
+  alert("Kết quả nhỏ nhất : " + vitri);
+  {let arr2 = [7,12,6,9,20,56,89];
+  let vitri = minArray(arr2);
+  alert("Kết quả nhỏ nhất : "+ vitri);}
+  {let arr3 = [];
+  let vitri = minArray(arr3);
+  alert("Vị trí nhỏ nhất : " + vitri);}
+  {let arr4 = [0,0,0,0,0,0];
+  let vitri = minArray(arr4);
+  alert("Vị trí nhỏ nhất : " + vitri);}
+</script>
+</body>
+</html>

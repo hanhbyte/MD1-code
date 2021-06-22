@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi nhiet do</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>NHập độ F</label>
+        <input id="inputNhập độ F"  placeholder="Nhập độ F"
+               oninput="HoandoiNhietdo(this.value)"
+               onchange="HoandoiNhietdo(this.value)">
+    </p>
+    <p>Độ C <span id="outputDoC"></span></p>
+
+</form>
+<script>
+    function HoandoiNhietdo(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputDoC").innerHTML = (valNum-32) / 1.8;
+    }
+</script>
+</body>
+</html>

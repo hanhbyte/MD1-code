@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập hàm 1</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+// <body onload="alertMessage()">
+// Bài 1
+// <script>
+//   function alertMessage(){
+//        alert("Xin Chào")
+//   }
+//
+// Bài 2
+
+/*Bài 3*/
+// let a = prompt("Nhập giá trị a");
+// let b = prompt("Nhập giá trị b");
+// let c = a + b;
+// function sosanh() {
+//
+//     for (let i = 0; i < length; i++) {
+//         if (a < b) ;
+//         alert(a);
+//         break;
+//     }
+//     if (a > b) ;
+//     alert( c);
+// }
+// sosanh();
+//Bài 4
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+</body>
+</html>

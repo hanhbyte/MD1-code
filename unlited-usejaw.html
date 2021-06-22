@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài tập</h1>
+<script>
+<!--  Bài 1  -->
+  // let arr = ["Red", "Green", "White", "Black"];
+  // let n = 5;
+  // for (let i = 0; i < arr.length; i++) {
+  //     document.write(arr[i] + ",")
+  // }
+
+//  Bài 2
+let a = prompt("Nhập số bất kì");
+let i = 0;
+let j;
+let hienthi=[];
+
+
+for (let i = 0; i < a.length; i++)
+{   j = i + 1;
+    if (+a[i] %2 ==0 && +a[j] %2 == 0)
+    {    hienthi.push(a[i],"-");
+} else {
+    hienthi.push(a[i]);
+}
+}
+    document.write(hienthi.join(" "));
+
+// Bài 3
+// let a = prompt('Nhập');
+// let b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+// let d = 'abcdefghijklmnopqrstuvwxyz';
+// let e = [];
+//
+// for (let i = 0; i < a.length; i++)
+// {
+//     if (b.indexOf(a[i]) !== -1)
+//     {
+//         e.push(a[i].toLowerCase());
+//     }
+//         else if (d.indexOf(a[i]) !== -1)
+//     {
+//         e.push(a[i].toUpperCase());
+//     }
+//         else
+//     {
+//         e.push(a[i]);
+//     }
+// }
+//     document.write(e.join(''));
+</script>
+</body>
+</html>

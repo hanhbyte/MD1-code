@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Research Survey</title>
+</head>
+<body>
+<form>
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <h4>What is your age range?</h4>
+    <select name="age" style="width: 200px">
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-50">35-50</option>
+        <option value="50+">50+</option>
+    </select>
+    <h4>What is your yearly income range?</h4>
+    <select name="money" style="width: 200px">
+        <option value="$0-$25000">$0-$25000</option>
+        <option value="$25001-$50000">$25001-$50000</option>
+        <option value="$50001-$100000">$50001-$100000</option>
+        <option value="$100000+">$100000+</option>
+    </select>
+    <h4>Gender Identity</h4>
+    <input type="radio" name="gender" value="Male">Male<br>
+    <input type="radio" name="gender" value="Female">Female<br>
+    <input type="radio" name="gender" value="Nonbinary">Nonbinary<br>
+    <input type="radio" name="gender" value="other">Other<br>
+    <input type="text" name="gender">
+    <h3>Which of the following products have your purchased in the last 2 months. Please check all that apply.
+    </h3>
+    <input type="checkbox" name="vehicle" value="Product 1">Product 1<br>
+    <input type="checkbox" name="vehicle" value="Product 2">Product 2<br>
+    <input type="checkbox" name="vehicle" value="Product 3">Product 3<br>
+    <h4>How often would you use our new product?
+    </h4>
+    <input type="radio" name="gender" value="Daily">Daily<br>
+    <input type="radio" name="gender" value="Weekly">Weekly<br>
+    <input type="radio" name="gender" value="Monthly">Monthly<br>
+    <h4>What would you pay for the new product?</h4>
+    $<input  type="text" name="gender" placeholder="Dollar"/> . <input type="text" name="gender" placeholder="Cents"/>
+    <h4>What features would you like to see in the new product.</h4>
+    <textarea cols="80" rows="10"></textarea>
+    <h4>Please rate you  level of agreement with th following statements.</h4>
+    <table>
+        <tr style="background:gray; border: 10px ">
+            <td></td>
+            <td>Strongly Disagree</td>
+            <td>Disagree</td>
+            <td>Agree</td>
+            <td>Strongly Agree</td>
+        </tr>
+        <tr>
+            <td>Our products are priced fairly.</td>
+            <td><input type="radio"><br>1</td>
+            <td><input type="radio"><br>2</td>
+            <td><input type="radio"><br>3</td>
+            <td><input type="radio"><br>4</td>
+        </tr>
+        <tr style="background:gray; border: 10px ">
+            <td>Our products are high quality.</td>
+            <td><input type="radio"><br>1</td>
+            <td><input type="radio"><br>2</td>
+            <td><input type="radio"><br>3</td>
+            <td><input type="radio"><br>4</td>
+        </tr>
+        <tr>
+            <td>You would recommend our to a friend or coworker</td>
+            <td><input type="radio"><br>1</td>
+            <td><input type="radio"><br>2</td>
+            <td><input type="radio"><br>3</td>
+            <td><input type="radio"><br>4</td>
+        </tr>
+    </table>
+    <button>Submit</button>
+</form>
+</body>
+</html>

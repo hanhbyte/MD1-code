@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiếm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+    function isPrime (number) {
+        if ( number >= 2 ){
+            let check = true ;
+            for (let i = 2; i < number ; i++) {
+                if ( number %i == 0 ) {check = false}
+            } return check;
+        }else {return false};
+    }
+    let daysonguyento = '';
+    for (let i = 0; i < 1000; i++) {
+        if (isPrime(i)){
+            daysonguyento+=i+"; " ;
+        }
+    }
+    document.write (daysonguyento);
+</script>
+
+</body>
+</html>

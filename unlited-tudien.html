@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<body>
+<h3>Từ điển</h3>
+<input id='nhapvao' type="text">
+<button type="button" onclick="dictionary()">Hiển thị</button>
+<script>
+  let tienganh = ["Stadium", "Arena", "Combatant", "User", "Assassin", "Magician"];
+  let tiengviet = ["Sân vận động", "Đấu trường", "Chiến binh", "Người dùng", "Sát thủ", "Pháp sư"];
+  function dictionary(){
+    let dich = "";
+    let hienthi = document.getElementById("nhapvao").value;
+        for (let i = 0; i < tienganh.length; i++){
+            if (hienthi == tienganh [i])
+                {    dich = tiengviet[i]; }
+            }
+        if (dich == "") {
+            alert("Không tìm thấy");
+
+            }
+        else {
+            alert('Nghĩa từ đó :' + dich);
+            document.getElementById('nhapvao').value = ""
+        }
+  }
+</script>
+</body>
+</html>
